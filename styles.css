@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ----------- global styles ----------- */
+
+* {
+    font-family: 'Raleway', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+html,
+body {
+    background-color: #151515;
+    color: white;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+body.fade-out {
+    opacity: 0 !important;
+}
+
+/* ----------- top bar ----------- */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.topbar h1 {
+    color: #00ff80;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    margin-left: 12.5px;
+}
+
+.nav button {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-right: 12.5px;
+    cursor: pointer;
+    background-color: #303030;
+    color: white;
+    border-radius: 7.5px;
+    border: none;
+    transition: all 0.25s ease;
+}
+
+.nav button:hover {
+    background-color: #353535;
+}
+
+.nav button:active {
+    background-color: #252525;
+    transform: scale(0.95);
+}
+
+#home {
+    color: #202020;
+    background-color: #00ff80;
+}
+
+#socials {
+    border: solid 1px #00ff80;
+}
+
+#about {
+    border: solid 1px #00ff80;
+}
+
+/* ----------- main content ----------- */
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+
+.c-container {
+    background-color: #202020;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.content {
+    margin: 15px;
+}
+
+.content p,
+.content li {
+    font-size: 18px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #00ff80;
+}

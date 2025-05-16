@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js?v=<%= Date.now() %>"></script>
+    <title>wings | Socials</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js"></script>
+    <script src="https://kit.fontawesome.com/76addef203.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <h1 onclick="goto.href='/';">wings</h1>
+            <div class="nav">
+                <button onclick="goto.href='/about';">About</button>
+                <button onclick="window.location.href='https://fastipi.onrender.com';">WIP API</button>
+                <button id="socials">Socials</button>
+                <button id="home" onclick="goto.href='/';">Home</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="c-container">
+            <div class="content">
+                <!-- why `font-size: 190%;`? because that's 90% the default font-size -->
+                <h1 style="text-align: center; font-size: 190%;">Socials 🌐</h1>
+                <hr>
+                <p>I can also be found in some parts of the Internet, here's a list.</p>
+                <h2>Social medias</h2>
+                <a href="https://github.com/winaviation/"><i class="fa-brands fa-github"></i> GitHub</a><br>
+                <a href="https://www.reddit.com/user/WinsAviation/"><i class="fa-brands fa-reddit"></i> Reddit</a><br>
+                <a href="https://discord.bio/itsmewingsagain"><i class="fa-brands fa-discord"></i> Discord</a><br>
+                <a href="mailto:winaviation2@gmail.com"><i class="fa-solid fa-envelope"></i> winaviation2@gmail.com</a>
+            </div>
+        </div>
+    </main>
+    <footer style="text-align: center; background-color: #101010; padding: 1%;">
+        © wings 2025 | all rights reserved
+    </footer>
+</body>
+
+</html>

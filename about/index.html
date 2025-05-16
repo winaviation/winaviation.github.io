@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js?v=<%= Date.now() %>"></script>
+    <title>wings | About</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #hidden-quote {
+            color: #353535;
+            font-size: 15px;
+            opacity: 0;
+            transition: opacity 0.25s ease;
+            text-align: center;
+        }
+
+        #hidden-quote:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <h1 onclick="goto.href='/';">wings</h1>
+            <div class="nav">
+                <button id="about">About</button>
+                <button onclick="window.location.href='https://fastipi.onrender.com';">WIP API</button>
+                <button onclick="goto.href='/socials';">Socials</button>
+                <button id="home" onclick="goto.href='/';">Home</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="c-container">
+            <div class="content">
+                <!-- why `font-size: 190%;`? because that's 90% the default font-size -->
+                <h1 style="text-align: center; font-size: 190%;">About me ℹ️</h1>
+                <hr>
+                <p>Greetings! I'm █████ ███ - a teenager who lives in <strong>Hanoi, Vietnam</strong>. I've been into tech since the <strong>Covid Pandemic</strong>, which is when my English and tech skills improve blazing fast. But not until <strong>2 years later</strong> I officially got into coding.</p>
+                <p style="font-size: 15px;">My skills were self-taught, meaning I did not rely on any classes in real life!</p>
+                <h2>A lil more about myself</h2>
+                <ul>
+                    <li>Mint green is my favorite color.</li>
+                    <li>I absolutely hate (and terrible) at math.</li>
+                    <li>My music taste is unexplainable.</li>
+                </ul>
+                <p>I usually make tools for myself to use, rarely for the public, by the way.</p>
+                <p id="hidden-quote">"Coding isn’t even the hard part, it’s finding a project you actually <i>want</i> to work on." - None other than me</p>
+            </div>
+        </div>
+    </main>
+    <footer style="text-align: center; background-color: #101010; padding: 1%;">
+        © wings 2025 | all rights reserved
+    </footer>
+</body>
+
+</html>
