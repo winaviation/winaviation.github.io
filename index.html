@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js?v=<%= Date.now() %>"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>wings</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
@@ -50,11 +50,13 @@
     <header>
         <div class="topbar">
             <h1>wings</h1>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <div class="nav">
                 <button onclick="goto.href='/about';">About</button>
                 <button onclick="window.location.href='https://fastipi.onrender.com';">WIP API</button>
                 <button onclick="goto.href='/socials';">Socials</button>
                 <button id="home">Home</button>
+                <p style="text-align: center; padding: 1%;">© wings 2025 | all rights reserved</p>
             </div>
         </div>
     </header>
@@ -81,9 +83,10 @@
             </div>
         </div>
     </main>
-    <footer style="text-align: center; background-color: #101010; padding: 1%;">
+    <footer style="text-align: center; padding: 1%;">
         © wings 2025 | all rights reserved
     </footer>
+    <script src="/hamburger.js?v=<%= Date.now() %>"></script>
 </body>
 
 </html>

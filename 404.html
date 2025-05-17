@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>wings | Socials</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            display: inline;
+            text-align: center;
+            line-height: 0.25rem;
+        }
+
+        #big-asf-404-text {
+            color: #00ff80;
+            font-family: 'Nunito', sans-serif;
+            font-size: 50vh;
+        }
+
+        @media (max-width: 768px) {
+            #big-asf-404-text {
+                font-size: 50vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <h1 onclick="goto.href='/';">wings</h1>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+            <div class="nav">
+                <button onclick="goto.href='/about';">About</button>
+                <button onclick="window.location.href='https://fastipi.onrender.com';">WIP API</button>
+                <button>Socials</button>
+                <button id="home" onclick="goto.href='/';">Home</button>
+                <p style="text-align: center; padding: 1%;">© wings 2025 | all rights reserved</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 id="big-asf-404-text">404</h1>
+        <p>The page you are looking for</p>
+        <h3>doesn't even exist</h3>
+    </main>
+    <footer style="text-align: center; padding: 1%;">
+        © wings 2025 | all rights reserved
+    </footer>
+    <script src="/hamburger.js?v=<%= Date.now() %>"></script>
+</body>
+
+</html>

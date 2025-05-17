@@ -6,6 +6,8 @@
     font-family: 'Raleway', sans-serif;
     user-select: none;
     -webkit-user-select: none;
+    transition: all ease;
+    box-sizing: border-box;
 }
 
 html,
@@ -15,11 +17,12 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+    overscroll-behavior: none;
 }
 
 body {
     opacity: 0;
-    transition: opacity 0.25s ease;
+    transition: opacity 0.25s;
 }
 
 body.fade-in {
@@ -40,6 +43,7 @@ body.fade-out {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: solid 1px #303030;
 }
 
 
@@ -51,6 +55,10 @@ body.fade-out {
     margin-left: 12.5px;
 }
 
+.nav {
+    display: flex;
+}
+
 .nav button {
     font-size: 1rem;
     padding: 1rem;
@@ -60,7 +68,7 @@ body.fade-out {
     color: white;
     border-radius: 7.5px;
     border: none;
-    transition: all 0.25s ease;
+    transition: all 0.25s;
 }
 
 .nav button:hover {
@@ -83,6 +91,12 @@ body.fade-out {
 
 #about {
     border: solid 1px #00ff80;
+}
+
+.nav p {
+    opacity: 0;
+    position: fixed;
+    bottom: 0;
 }
 
 /* ----------- main content ----------- */
@@ -116,4 +130,114 @@ a {
     font-size: 18px;
     text-decoration: none;
     color: #00ff80;
+}
+
+footer {
+    opacity: 0.1;
+    background-color: rgb(0, 0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: opacity 0.25s, background-color 0.25s;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+/* ----------- responsiveness ----------- */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.hamburger:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(15, 15, 15, 0.95);
+        z-index: 999;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .nav.show {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 32px;
+        margin-right: 20px;
+        z-index: 1000;
+    }
+
+    /* Make nav buttons bigger and spaced out for easier tap */
+    .nav button {
+        font-size: 1.25rem;
+        padding: 1rem 2rem;
+        margin: 0.5rem 0;
+        width: 80vw;
+        max-width: 300px;
+        border-radius: 12px;
+    }
+
+    .c-container {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        background: none;
+        padding: 1rem;
+    }
+
+    .content {
+        padding-bottom: 15px;
+    }
+
+    main {
+        flex: 1 1 auto;
+        margin-top: 25%;
+        width: 100vw;
+        height: 100vh;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    footer {
+        opacity: 0;
+    }
+
+    .nav p {
+        opacity: 1;
+    }
 }

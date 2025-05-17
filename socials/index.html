@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js?v=<%= Date.now() %>"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>wings | Socials</title>
     <link rel="stylesheet" href="../styles.css">
-    <script src="../scripts.js"></script>
     <script src="https://kit.fontawesome.com/76addef203.js" crossorigin="anonymous"></script>
+    <script src="../scripts.js?v=<%= Date.now() %>"></script>
     <style>
         body {
             display: flex;
@@ -22,11 +21,13 @@
     <header>
         <div class="topbar">
             <h1 onclick="goto.href='/';">wings</h1>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <div class="nav">
                 <button onclick="goto.href='/about';">About</button>
                 <button onclick="window.location.href='https://fastipi.onrender.com';">WIP API</button>
                 <button id="socials">Socials</button>
                 <button id="home" onclick="goto.href='/';">Home</button>
+                <p style="text-align: center; padding: 1%;">© wings 2025 | all rights reserved</p>
             </div>
         </div>
     </header>
@@ -45,9 +46,10 @@
             </div>
         </div>
     </main>
-    <footer style="text-align: center; background-color: #101010; padding: 1%;">
+    <footer style="text-align: center; padding: 1%;">
         © wings 2025 | all rights reserved
     </footer>
+    <script src="../hamburger.js?v=<%= Date.now() %>"></script>
 </body>
 
 </html>
