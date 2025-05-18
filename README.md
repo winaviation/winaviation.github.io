@@ -1,6 +1,8 @@
-<div id="user-content-toc">
-  <ul align="left">
-    <summary><h1 style="display: inline-block">Welcome to my website! 👋</h1></summary>
+<div id="user-content-toc" align="center">
+  <ul style="list-style: none; padding: 0; margin: 0; display: inline-block;">
+    <summary>
+      <h1 style="display: inline; margin: 0;">Welcome to my website! 👋</h1>
+    </summary>
   </ul>
 </div>
 
