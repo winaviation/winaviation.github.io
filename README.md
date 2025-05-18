@@ -1,16 +1,38 @@
-## Hi there 👋
+<div id="user-content-toc">
+  <ul align="left">
+    <summary><h1 style="display: inline-block">Welcome to my website! 👋</h1></summary>
+  </ul>
+</div>
 
-<!--
-**winaviation/** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## ❓ What's in this website
+> [!WARNING]
+> In construction, subject to change!
+- ℹ️ About me
+- 🌐 My socials
+- 🌱 My life
 
-Here are some ideas to get you started:
+## 🧾 License
+This website is licensed under the GNU General Public License V3
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Permissions
+| Permission     | Status |
+|----------------|--------|
+| Commercial Use | ✔️     |
+| Modification   | ✔️     |
+| Distribution   | ✔️     |
+| Patent Use     | ✔️     |
+| Private Use    | ✔️     |
+
+### Limitations
+| Limitation | Status |
+|------------|--------|
+| Liability  | ❌     |
+| Warranty   | ❌     |
+| Conditions | ❌     |
+
+### License & Copyright
+| Item           | Status |
+|----------------|--------|
+| State Changes  | ℹ️     |
+| Disclose Source| ℹ️     |
+| Same License   | ℹ️     |
