@@ -3,17 +3,15 @@ window.toggleMenu = function () {
     const icon = document.querySelector('.hamburger')
 
     if (nav.classList.contains('show')) {
-        // start fadeout
         nav.style.opacity = '0'
 
         setTimeout(() => {
             nav.classList.remove('show')
-            nav.style.opacity = '' // reset inline style after fadeout
-        }, 300) // match this to your CSS transition duration
+            nav.style.opacity = '' 
+        }, 300) 
     } else {
-        // fadein + show
         nav.classList.add('show')
-        void nav.offsetWidth // force reflow for transition
+        void nav.offsetWidth
         nav.style.opacity = '1'
     }
 }
