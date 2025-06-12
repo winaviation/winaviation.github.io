@@ -12,6 +12,7 @@
 - ℹ️ About me
 - 🌐 My socials
 - 🌱 My life
+- 📦 My iOS repository
 
 ## 🧾 License
 This website is licensed under the GNU General Public License V3
