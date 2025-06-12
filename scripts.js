@@ -5,9 +5,18 @@ window.addEventListener("pageshow", (event) => {
     document.body.classList.add("fade-in");
 });
 
-window.addEventListener("beforeunload", () => {
-    document.body.classList.add("fade-out");
+document.addEventListener("click", (e) => {
+    if (e.target.closest("a")) {
+        window.__ignoreFade = true;
+    }
 });
+
+window.addEventListener("beforeunload", () => {
+    if (!window.__ignoreFade) {
+        document.body.classList.add("fade-out");
+    }
+});
+
 
 window.goto = {
     set href(url) {

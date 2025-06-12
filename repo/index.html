@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
+    <title>wings' repo</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
@@ -10,15 +11,35 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="wings" />
     <link rel="manifest" href="/favicon/site.webmanifest" />
-    <title>wings | Socials</title>
     <link rel="stylesheet" href="/styles.css">
-    <script src="https://kit.fontawesome.com/76addef203.js" crossorigin="anonymous"></script>
     <script src="/scripts.js"></script>
     <style>
         body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+        }
+
+        #sileo {
+            color: white;
+            padding: 14px;
+            background-color: #303030;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
+        }
+
+        #zebra {
+            color: white;
+            padding: 14px;
+            background-color: #303030;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -30,9 +51,9 @@
             <div class="hamburger" onclick="toggleMenu()">☰</div>
             <div class="nav">
                 <button onclick="goto.href='/about';">About</button>
-                <button onclick="goto.href='/repo';">Repo</button>
+                <button id="repo">Repo</button>
                 <button onclick="window.location.href='https://fastipi.onrender.com';">WIP API</button>
-                <button id="socials">Socials</button>
+                <button onclick="goto.href='/socials';">Socials</button>
                 <button id="home" onclick="goto.href='/';">Home</button>
                 <p style="text-align: center; padding: 1%;">© wings 2025 | all rights reserved</p>
             </div>
@@ -41,24 +62,23 @@
     <main>
         <div class="c-container">
             <div class="content">
-                <!-- why `font-size: 190%;`? because that's 90% the default font-size -->
-                <h1 style="text-align: center; font-size: 190%;">Socials 🌐</h1>
+                <h1 style="text-align: center; font-size: 190%;">wings' repo</h1>
                 <hr>
-                <p>I can also be found in some parts of the Internet, here's a list.</p>
-                <h2>Social medias</h2>
-                <a href="https://github.com/winaviation"><i class="fa-brands fa-github"></i> GitHub</a><br>
-                <a href="https://www.reddit.com/user/WinsAviation/"><i class="fa-brands fa-reddit"></i> Reddit</a><br>
-                <a href="https://discord.bio/itsmewingsagain"><i class="fa-brands fa-discord"></i> Discord</a><br>
-                <a href="https://x.com/UsernameTaken29"><i class="fa-brands fa-x-twitter"></i> X (Twitter)</a><br>
-                <a href="https://www.xbox.com/en-US/play/user/LifeEnjoyer8379"><i class="fa-brands fa-xbox"></i> Xbox</a><br>
-                <a href="mailto:winaviation2@gmail.com"><i class="fa-solid fa-envelope"></i> winaviation2@gmail.com</a>
+                <h2>What is this?</h2>
+                <p>If you don't understand, that's fine. This is my iOS jailbreak repository, add this repo to your
+                    favorite package manager to see my tweaks.</p>
+                <h2>Add my repository</h2>
+                <div class="add">
+                    <a id="sileo" href="sileo://source/https://winaviation.github.io/repo"><img width=25 height=25
+                             src="./sileo.png">Add to Sileo</a><br>
+                    <a id="zebra" href="zbra://sources/add/https://winaviation.github.io/repo"><img width=25 height=25
+                             src="./zebra.png">Add to Zebra</a>
+                </div>
+
             </div>
         </div>
+
     </main>
-    <footer style="text-align: center; padding: 1%;">
-        © wings 2025 | all rights reserved
-    </footer>
-    <script src="/hamburger.js?v=<%= Date.now() %>"></script>
 </body>
 
 </html>

@@ -93,6 +93,10 @@ body.fade-out {
     border: solid 1px #00ff80;
 }
 
+#repo {
+    border: solid 1px #00ff80;
+}
+
 .nav p {
     opacity: 0;
     position: fixed;
