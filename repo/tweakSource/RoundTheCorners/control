@@ -1,7 +1,7 @@
 Package: com.wings.rtc
 Name: RoundTheCorners
 Version: 1.0.0
-Architecture: iphoneos-arm
+Architecture: iphoneos-arm64
 Description: Why are my screen corners rounded?
 Maintainer: wings
 Author: wings
