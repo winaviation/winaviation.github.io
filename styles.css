@@ -227,7 +227,7 @@ a {
     flex-direction: column;
     gap: 0.6em;
     font-size: 1.674vh;
-    line-height: 1.5;
+    line-height: 1.2;
     color: white;
 }
 .side-list {
@@ -237,7 +237,7 @@ a {
     flex-direction: column;
     gap: 0.5em;
     font-size: 1.674vh;
-    line-height: 1.5;
+    line-height: 1.2;
     color: white;
 }
 .tc-sep {
