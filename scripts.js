@@ -6,7 +6,6 @@ const isMobileView = () => window.innerWidth <= MOBILE_BREAKPOINT;
 
 let bentoState = "home";
 
-// shifts the main card to fill the space when side panels slide out
 function setBentoState(state) {
   if (bentoState === state) return;
   bentoState = state;
@@ -27,12 +26,10 @@ function setBentoState(state) {
   }
 }
 
-// cross-fades between panels, guards against double-firing with the transitioning flag
 function navigateTo(panel) {
   if (panel === currentPanel || transitioning) return;
   transitioning = true;
 
-  // sync the active button state
   allBtns.forEach((btn) => {
     if (btn.dataset.panel === panel) btn.id = "current";
     else btn.removeAttribute("id");
@@ -41,7 +38,6 @@ function navigateTo(panel) {
   const outPanel = document.getElementById("panel-" + currentPanel);
   const inPanel = document.getElementById("panel-" + panel);
 
-  // bento layout only needs to shift when going to/from home
   const fromHome = currentPanel === "home";
   const toHome = panel === "home";
   const layoutChange = fromHome || toHome;
@@ -62,7 +58,6 @@ function navigateTo(panel) {
       inPanel.style.opacity = "1";
     });
     currentPanel = panel;
-    // clean up inline styles after transition finishes
     setTimeout(() => {
       outPanel.style.opacity = "";
       outPanel.style.transition = "";
@@ -78,7 +73,6 @@ allBtns.forEach((btn) => {
 
 const MOBILE_BREAKPOINT = 768;
 
-// vw/vh values to apply on mobile, keeps the glass elements sized for small screens
 const MOBILE_SIZES = {
   mainCard: { vw: "88", vh: "58", fontSize: "16px" },
   sideCard: { vw: "88", vh: "30", fontSize: "15px" },
@@ -87,10 +81,9 @@ const MOBILE_SIZES = {
   topbar: { vw: "92", vh: "8.368", fontSize: null },
 };
 
-// stash original attr values before overwriting so we can restore on desktop
 const originalAttrs = new WeakMap();
-
-// generation counter to cancel stale rAF font writes after rapid resizes
+// per-element generation counter, incremented on every size change so stale
+// requestAnimationFrame font-size overrides can detect they've been superseded
 const fontGeneration = new WeakMap();
 
 function saveOriginal(el) {
@@ -106,30 +99,36 @@ function saveOriginal(el) {
 function applyMobileSize(el, sizes) {
   el.setAttribute("vw-width", sizes.vw);
   el.setAttribute("vh-height", sizes.vh);
-
   if (sizes.fontSize) {
-    // bump generation so any pending rAF from a previous call gets ignored
     const gen = (fontGeneration.get(el) || 0) + 1;
     fontGeneration.set(el, gen);
-    requestAnimationFrame(() => {
-      if (fontGeneration.get(el) === gen) {
-        el.style.fontSize = sizes.fontSize;
+
+    const enforce = () => {
+      el.style.fontSize = sizes.fontSize;
+    };
+    enforce(); // apply immediately after attribute swap
+    const obs = new MutationObserver(() => {
+      if (fontGeneration.get(el) !== gen) {
+        obs.disconnect();
+        return;
       }
+      if (el.style.fontSize !== sizes.fontSize) enforce();
     });
+    obs.observe(el, { attributes: true, attributeFilter: ["style"] });
+    setTimeout(() => obs.disconnect(), 500);
   }
 }
 
 function restoreOriginal(el) {
   const orig = originalAttrs.get(el);
   if (!orig) return;
-
+  // bump generation so any pending mobile rAF font-size override is cancelled
   fontGeneration.set(el, (fontGeneration.get(el) || 0) + 1);
   if (orig.vw !== null) el.setAttribute("vw-width", orig.vw);
   if (orig.vh !== null) el.setAttribute("vh-height", orig.vh);
   el.style.fontSize = orig.fontSize;
 }
 
-// saves originals then swaps attrs in or out depending on viewport mode
 function applyLayout(isMobile) {
   const mainCard = document.getElementById("main-card");
   const sideCards = document.querySelectorAll("#bento-right liquid-glass");
@@ -162,7 +161,6 @@ function applyLayout(isMobile) {
 
 let lastIsMobile = null;
 
-// only calls applyLayout when the breakpoint actually crosses, skips redundant work
 function checkLayout() {
   const isMobile = window.innerWidth <= MOBILE_BREAKPOINT;
   if (isMobile !== lastIsMobile) {
@@ -171,14 +169,12 @@ function checkLayout() {
   }
 }
 
-// wait for both custom elements to be ready before doing anything with their attrs
 customElements.whenDefined("liquid-glass").then(() => {
   customElements.whenDefined("liquid-btn").then(() => {
     checkLayout();
   });
 });
 
-// debounced resize, 160ms is enough to not murder performance
 let resizeTimer;
 window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
@@ -208,7 +204,7 @@ hamburger.addEventListener("click", (e) => {
   setMobileMenuOpen(!mobileMenu.classList.contains("open"));
 });
 
-// close the mobile menu on any outside click
+// close menu when tapping outside
 document.addEventListener("click", (e) => {
   if (
     mobileMenu.classList.contains("open") &&
@@ -227,15 +223,16 @@ mobileNavBtns.forEach((btn) => {
   });
 });
 
+// keep mobile active state in sync with desktop nav
+// patch navigateTo to also update mobile buttons
 const _origNavigateTo = navigateTo;
-
-// also sync mobile active state when desktop nav buttons are clicked
 allBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     updateMobileActiveBtn(btn.dataset.panel);
   });
 });
 
+// set initial active state
 updateMobileActiveBtn(currentPanel);
 
 const VALID_PANELS = ["home", "about", "repo"];
@@ -245,8 +242,8 @@ function getPanelFromHash() {
   return VALID_PANELS.includes(hash) ? hash : "home";
 }
 
-// navigates to a panel and optionally pushes a history entry
 function navigateToHash(panel, pushState = true) {
+  // update the URL hash without triggering a page reload
   if (pushState) {
     history.pushState(null, "", panel === "home" ? "#home" : `#${panel}`);
   }
@@ -254,7 +251,6 @@ function navigateToHash(panel, pushState = true) {
   updateMobileActiveBtn(panel);
 }
 
-// on load, jump straight to whatever panel the url hash points to
 customElements.whenDefined("liquid-glass").then(() => {
   customElements.whenDefined("liquid-btn").then(() => {
     const initial = getPanelFromHash();
@@ -262,7 +258,7 @@ customElements.whenDefined("liquid-glass").then(() => {
       transitioning = false;
       navigateTo(initial);
       updateMobileActiveBtn(initial);
-
+      // sync the topbar button highlight
       allBtns.forEach((btn) => {
         if (btn.dataset.panel === initial) btn.id = "current";
         else btn.removeAttribute("id");
@@ -271,21 +267,22 @@ customElements.whenDefined("liquid-glass").then(() => {
   });
 });
 
-// push hash on desktop nav click
+// update hash when desktop nav buttons are clicked
 allBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     history.pushState(null, "", `#${btn.dataset.panel}`);
   });
 });
 
-// push hash on mobile nav click
+// update hash when mobile nav buttons are clicked
+// (they already call navigateTo via their own listener, just push state here)
 mobileNavBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
     history.pushState(null, "", `#${btn.dataset.panel}`);
   });
 });
 
-// handle back/forward, sync panel and button state to wherever the browser landed
+// handle browser back/forward
 window.addEventListener("popstate", () => {
   const panel = getPanelFromHash();
   navigateTo(panel);
