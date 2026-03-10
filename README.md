@@ -7,35 +7,13 @@
 </div>
 
 ## ❓ What's in this website
+
 > [!WARNING]
-> In construction, subject to change!
-- ℹ️ About me
-- 🌐 My socials
-- 🌱 My life
-- 📦 My iOS repository
+> Subject to change!
+
+- mainly about my life
+- and uhhh, showing off the liquid ass
 
 ## 🧾 License
-This website is licensed under the GNU General Public License V3
 
-### Permissions
-| Permission     | Status |
-|----------------|--------|
-| Commercial Use | ✔️     |
-| Modification   | ✔️     |
-| Distribution   | ✔️     |
-| Patent Use     | ✔️     |
-| Private Use    | ✔️     |
-
-### Limitations
-| Limitation | Status |
-|------------|--------|
-| Liability  | ❌     |
-| Warranty   | ❌     |
-| Conditions | ❌     |
-
-### License & Copyright
-| Item           | Status |
-|----------------|--------|
-| State Changes  | ℹ️     |
-| Disclose Source| ℹ️     |
-| Same License   | ℹ️     |
+MIT License

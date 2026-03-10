@@ -1,71 +1,521 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="wings" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <title>404 — wings</title>
+        <script
+            src="https://kit.fontawesome.com/6c5929dddf.js"
+            crossorigin="anonymous"
+        ></script>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="wings" />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-    <title>wings | 404 Not Found</title>
-    <link rel="stylesheet" href="/styles.css">
-    <script src="/scripts.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
-            display: inline;
-            text-align: center;
-            line-height: 0.25rem;
-        }
-
-        #big-asf-404-text {
-            color: #00ff80;
-            font-family: 'Nunito', sans-serif;
-            font-size: 50vh;
-        }
-
-        @media (max-width: 768px) {
-            #big-asf-404-text {
-                font-size: 50vw;
+            :root {
+                color-scheme: dark;
             }
-        }
-    </style>
-</head>
 
-<body>
-    <header>
-        <div class="topbar">
-            <h1 onclick="goto.href='/';">wings</h1>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-            <div class="nav">
-                <button onclick="goto.href='/about';">About</button>
-                <button onclick="goto.href='/repo';">Repo</button>
-                <button onclick="window.location.href='https://fastipi.onrender.com';">WIP API</button>
-                <button>Socials</button>
-                <button id="home" onclick="goto.href='/';">Home</button>
-                <p style="text-align: center; padding: 1%;">© wings 2025 | all rights reserved</p>
+            * {
+                font-family: "Raleway", sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+
+            body {
+                background: url("background.jpg") no-repeat center center;
+                background-size: cover;
+                color: white;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                overflow-x: clip;
+                position: relative;
+            }
+
+            header {
+                flex-shrink: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: sticky;
+                top: 1.046vh;
+                z-index: 50;
+            }
+
+            .topbar {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .header-content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .header-content h1 {
+                color: #00ff80;
+                margin-left: 1.32%;
+                font-size: 3.347vh;
+            }
+
+            .header-buttons {
+                display: flex;
+                align-items: center;
+                margin-right: 0.8%;
+                gap: 0.523vw;
+            }
+
+            /* wrap liquid-btn in <a>, display:contents makes the anchor invisible */
+            .header-buttons a {
+                display: contents;
+                text-decoration: none;
+            }
+            main {
+                flex-grow: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 3.347vh;
+                box-sizing: border-box;
+            }
+
+            /* card inner layout */
+            .card-content {
+                padding: 4vmin 5vmin;
+                display: flex;
+                flex-direction: column;
+                gap: 1.4em;
+                height: 100%;
+                width: 100%;
+                box-sizing: border-box;
+                justify-content: center;
+            }
+
+            .tc-sep {
+                display: flex;
+                align-items: center;
+                gap: 2vmin;
+                width: 100%;
+            }
+
+            .line-sep-container {
+                display: flex;
+                flex-grow: 1;
+                height: 0.457vh;
+            }
+
+            .line-sep {
+                background: white;
+                height: 100%;
+                width: 100%;
+                opacity: 0.2;
+                border-radius: 100vh;
+            }
+
+            .tc-sep i {
+                font-size: 2.1em;
+            }
+
+            .code {
+                font-family: "Nunito", sans-serif;
+                font-size: 11.506vh;
+                font-weight: 800;
+                line-height: 1;
+                color: #00ff80;
+            }
+
+            .label {
+                font-size: 1.883vh;
+                font-weight: 700;
+                margin-top: 0.3em;
+            }
+
+            .divider {
+                height: 1px;
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 100vh;
+            }
+
+            .desc {
+                font-size: 1.674vh;
+                line-height: 1.65;
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                padding: 1%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.6vh;
+            }
+
+            footer a {
+                opacity: 0.5;
+                color: #00ff80;
+                text-decoration: none;
+                transition: opacity 0.3s ease;
+            }
+
+            footer p {
+                opacity: 0.5;
+                transition: opacity 0.3s ease;
+                color: white;
+            }
+
+            footer p:hover,
+            footer a:hover {
+                opacity: 1;
+            }
+            #hamburger {
+                display: none;
+            }
+            #mobile-menu {
+                display: none;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    overflow-y: auto;
+                }
+
+                .header-content h1 {
+                    margin-left: 4.4%;
+                }
+                .header-buttons {
+                    display: none;
+                }
+
+                #hamburger {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 50%;
+                    right: 6.6%;
+                    transform: translateY(-50%);
+                    width: 10vw;
+                    height: 10vw;
+                    max-width: 44px;
+                    max-height: 44px;
+                    background: rgba(255, 255, 255, 0.08);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 0.8em;
+                    color: white;
+                    font-size: 1.3em;
+                    cursor: pointer;
+                    z-index: 100;
+                    transition: background 0.2s ease;
+                    -webkit-tap-highlight-color: transparent;
+                }
+
+                #hamburger:active {
+                    background: rgba(255, 255, 255, 0.18);
+                }
+
+                #mobile-menu {
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    top: calc(100% + 1vh);
+                    left: 0;
+                    width: 100%;
+                    z-index: 99;
+                    visibility: hidden;
+                    pointer-events: none;
+                }
+
+                #mobile-menu.open {
+                    visibility: visible;
+                    pointer-events: all;
+                }
+
+                .mobile-menu-inner {
+                    width: 100%;
+                    padding: 1.5vmin 3vmin;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .mobile-nav-link {
+                    color: white;
+                    font-family: "Raleway", sans-serif;
+                    font-size: 2.2vh;
+                    font-weight: 600;
+                    text-align: left;
+                    padding: 1.8vmin 1vmin;
+                    display: block;
+                    text-decoration: none;
+                    -webkit-tap-highlight-color: transparent;
+                    transition: color 0.15s ease;
+                }
+
+                .mobile-nav-link:active {
+                    color: #00ff80;
+                }
+
+                .mobile-menu-sep {
+                    height: 1px;
+                    background: rgba(255, 255, 255, 0.15);
+                    margin: 0 1vmin;
+                }
+
+                /* base rule already handles sticky + top:1.046vh */
+
+                main {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2vh 0;
+                    width: 100%;
+                    overflow: visible;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <liquid-glass
+                    responsive="true"
+                    vh-height="8.368"
+                    vw-width="98.95"
+                    bezel-width-percent="25"
+                    specular-opacity="0.3"
+                    flex-center="false"
+                    ><div class="header-content">
+                        <h1>wings</h1>
+                        <div class="header-buttons">
+                            <a href="/#about">
+                                <liquid-btn
+                                    force-fallback="true"
+                                    font-size-percent="57.6"
+                                    responsive="true"
+                                    vh-height="5.23"
+                                    vw-width="7.845"
+                                    >About</liquid-btn
+                                >
+                            </a>
+                            <a href="/#repo">
+                                <liquid-btn
+                                    force-fallback="true"
+                                    font-size-percent="57.6"
+                                    responsive="true"
+                                    vh-height="5.23"
+                                    vw-width="7.845"
+                                    >Repo</liquid-btn
+                                >
+                            </a>
+                            <a href="/#home">
+                                <liquid-btn
+                                    force-fallback="true"
+                                    font-size-percent="57.6"
+                                    responsive="true"
+                                    vh-height="5.23"
+                                    vw-width="7.845"
+                                    >Home</liquid-btn
+                                >
+                            </a>
+                        </div>
+                    </div></liquid-glass
+                >
+                <button
+                    id="hamburger"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+                    <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+                </button>
             </div>
-        </div>
-    </header>
-    <main>
-        <h1 id="big-asf-404-text">404</h1>
-        <p>The page you are looking for</p>
-        <h3>doesn't even exist</h3>
-    </main>
-    <footer style="text-align: center; padding: 1%;">
-        © wings 2025 | all rights reserved
-    </footer>
-    <script src="/hamburger.js?v=<%= Date.now() %>"></script>
-</body>
+            <div id="mobile-menu" aria-hidden="true">
+                <liquid-glass
+                    responsive="true"
+                    vw-width="92"
+                    vh-height="22"
+                    radius-percent="16"
+                    specular-opacity="0.4"
+                    flex-center="false"
+                    bezel-width-percent="16"
+                >
+                    <div class="mobile-menu-inner">
+                        <a class="mobile-nav-link" href="/#home">Home</a>
+                        <div class="mobile-menu-sep"></div>
+                        <a class="mobile-nav-link" href="/#about">About</a>
+                        <div class="mobile-menu-sep"></div>
+                        <a class="mobile-nav-link" href="/#repo">Repo</a>
+                    </div>
+                </liquid-glass>
+            </div>
+        </header>
+        <main>
+            <liquid-glass
+                id="card-404"
+                responsive="true"
+                vw-width="44.45606694560669"
+                vh-height="62.76150627615063"
+                flex-center="false"
+                specular-opacity="0.5"
+                radius-percent="5"
+                refraction-scale="3"
+                blur="15"
+                bezel-width-percent="5"
+            >
+                <div class="card-content">
+                    <div class="tc-sep">
+                        <div class="line-sep-container">
+                            <div class="line-sep"></div>
+                        </div>
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
 
+                    <div>
+                        <div class="code">404</div>
+                        <div class="label">Page not found</div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <p class="desc">
+                        Whatever you were looking for isn't here.<br />
+                        It might've been moved, deleted, or just never existed.
+                    </p>
+
+                    <a href="/" style="display: contents">
+                        <liquid-btn
+                            id="btn-home"
+                            force-fallback="true"
+                            responsive="true"
+                            vw-width="14"
+                            vh-height="5.23"
+                            font-size-percent="36.7"
+                            ><span class="btn-content-wrapper">
+                                <i
+                                    class="fa-solid fa-arrow-left"
+                                    style="margin-right: 0.5em"
+                                ></i>
+                                take me home
+                            </span></liquid-btn
+                        >
+                    </a>
+                </div>
+            </liquid-glass>
+        </main>
+        <footer>
+            <p>© wings 2026 | all rights reserved</p>
+            <a
+                style="text-align: right"
+                href="https://unsplash.com/photos/a-close-up-of-a-palm-leaf-in-the-dark-GZ2fBNgaPG0"
+                target="_blank"
+            >
+                "A close up of a palm leaf in the dark" —
+                <i class="fa-brands fa-unsplash"></i> Ish Consul
+            </a>
+        </footer>
+
+        <script type="module" src="lg-component.js"></script>
+        <script type="module" src="lg-button-component.js"></script>
+        <script>
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            function setMenuOpen(open) {
+                mobileMenu.classList.toggle("open", open);
+                hamburger.setAttribute("aria-expanded", open);
+                mobileMenu.setAttribute("aria-hidden", !open);
+                document.getElementById("hamburger-icon").className = open
+                    ? "fa-solid fa-xmark"
+                    : "fa-solid fa-bars";
+            }
+
+            hamburger.addEventListener("click", (e) => {
+                e.stopPropagation();
+                setMenuOpen(!mobileMenu.classList.contains("open"));
+            });
+
+            document.addEventListener("click", (e) => {
+                if (
+                    mobileMenu.classList.contains("open") &&
+                    !mobileMenu.contains(e.target) &&
+                    e.target !== hamburger
+                )
+                    setMenuOpen(false);
+            });
+
+            const BREAKPOINT = 768;
+            let lastMobile = null;
+
+            // original desktop sizes
+            const DESKTOP = {
+                topbar: { vw: "98.95", vh: "8.368" },
+                card: { vw: "44.45606694560669", vh: "62.76150627615063" },
+                btn: { vw: "14", vh: "5.23", fs: "36.7" },
+            };
+            const MOBILE = {
+                topbar: { vw: "92", vh: "8.368" },
+                card: { vw: "88", vh: "58" },
+                btn: { vw: "76", vh: "6.2", fs: "48" },
+            };
+
+            function swapAttrs(el, sizes) {
+                if (!el) return;
+                el.setAttribute("vw-width", sizes.vw);
+                el.setAttribute("vh-height", sizes.vh);
+                if (sizes.fs) {
+                    const gen = (el._fsGen = (el._fsGen || 0) + 1);
+                    requestAnimationFrame(() => {
+                        if (el._fsGen === gen) el.style.fontSize = ""; // let font-size-percent recalc
+                    });
+                    el.setAttribute("font-size-percent", sizes.fs);
+                }
+            }
+
+            function checkLayout() {
+                const isMobile = window.innerWidth <= BREAKPOINT;
+                if (isMobile === lastMobile) return;
+                lastMobile = isMobile;
+                const sizes = isMobile ? MOBILE : DESKTOP;
+                swapAttrs(
+                    document.querySelector(".topbar liquid-glass"),
+                    sizes.topbar,
+                );
+                swapAttrs(document.getElementById("card-404"), sizes.card);
+                swapAttrs(document.getElementById("btn-home"), sizes.btn);
+            }
+
+            customElements
+                .whenDefined("liquid-glass")
+                .then(() =>
+                    customElements.whenDefined("liquid-btn").then(checkLayout),
+                );
+            window.addEventListener("resize", checkLayout);
+        </script>
+    </body>
 </html>

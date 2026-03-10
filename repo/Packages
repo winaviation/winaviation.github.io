@@ -9,3 +9,6 @@ Section: Tweaks
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Filename: debs/wings.rtc-1.0.0.deb
 Size: 7038
+MD5sum: 96583ba4d1e1c4560f2bbba8468d5e23
+SHA1: d491f6b72eb2cbe333f024c8e9e39587e4bc48e8
+SHA256: b5ddce52ca906674d8dac4d87ecb8dc4e30c5525570955027ccc55653ee68e3e
