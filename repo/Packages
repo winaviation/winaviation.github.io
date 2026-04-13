@@ -1,53 +1,77 @@
-Package: com.wings.rtc
-Name: RoundTheCorners
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Description: Why are my screen corners rounded?
-Maintainer: wings
-Author: wings
-Section: Tweaks
-Depends: mobilesubstrate, preferenceloader
-Filename: debs/wings.rtc-1.0.0.deb
-Size: 6304
-MD5sum: 96583ba4d1e1c4560f2bbba8468d5e23
-SHA1: d491f6b72eb2cbe333f024c8e9e39587e4bc48e8
-SHA256: b5ddce52ca906674d8dac4d87ecb8dc4e30c5525570955027ccc55653ee68e3e
-
 Package: dylv.liquidass
-Name: Liquid (Gl)ass
 Version: 5.1.testers
 Architecture: iphoneos-arm
-Description: ass
 Maintainer: dylv
 Author: dylv
-Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
 Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm.deb
 Size: 168254
 SHA256: bb3317f576a63a7bcea35703e4246b6194e64d41f534b63445c992432399d5dc
 
 Package: dylv.liquidass
-Name: Liquid (Gl)ass
 Version: 5.1.testers
-Architecture: iphoneos-arm64
-Description: ass
+Architecture: iphoneos-arm64e
 Maintainer: dylv
 Author: dylv
-Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
+Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm64e.deb
+Size: 167778
+SHA256: a4e7911b2882f6cb244d453ffe8ff3129f256d2f7f85feac0a0901b3771242ec
+
+Package: dylv.liquidass
+Version: 6.alpha
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_6.alpha_iphoneos-arm64.deb
+Size: 186806
+SHA256: 0c47dfb19c99cc53c893c0e11159466f738ce1f32fcfb5bbb379e34b2da8b248
+
+Package: dylv.liquidass
+Version: 6.alpha
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_6.alpha_iphoneos-arm.deb
+Size: 186702
+SHA256: 4c02065e347f51ad8d30bd835ce596896b8490807701ef3acc6d8da2d6ba9373
+
+Package: dylv.liquidass
+Version: 5.1.testers
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
 Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm64.deb
 Size: 168470
 SHA256: c00e88f3ac30133cb393be95c1c6e52cfa2e34291973439d0216a692784ef198
 
 Package: dylv.liquidass
-Name: Liquid (Gl)ass
-Version: 5.1.testers
+Version: 6.alpha
 Architecture: iphoneos-arm64e
-Description: ass
 Maintainer: dylv
 Author: dylv
-Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
-Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm64e.deb
-Size: 167778
-SHA256: a4e7911b2882f6cb244d453ffe8ff3129f256d2f7f85feac0a0901b3771242ec
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_6.alpha_iphoneos-arm64e.deb
+Size: 186944
+SHA256: 68a771e93b41ee3f8dc639230d58fbf18d3b560417c52f14cab0746e0bfe2f25
+
+Package: com.wings.rtc
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: wings
+Author: wings
+Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0)
+Description: Why are my screen corners rounded?
+Filename: debs/wings.rtc-1.0.0.deb
+Size: 6304
+SHA256: b5ddce52ca906674d8dac4d87ecb8dc4e30c5525570955027ccc55653ee68e3e
+
