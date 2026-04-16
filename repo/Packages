@@ -1,4 +1,81 @@
 Package: dylv.liquidass
+Version: 4.testers
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_4.testers_iphoneos-arm64.deb
+Size: 115644
+SHA256: 98a6fb2e3c297164b9b6ed9d1d2d5995657323ef2eeee1fd62381b237b3d9f81
+
+Package: dylv.liquidass
+Version: 7.alpha
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_7.alpha_iphoneos-arm64.deb
+Size: 216040
+SHA256: f93b96b8d2cf7a4e63c483bef581e2b3a2e7dee7ba0e27045c56a8ccb1756ab0
+
+Package: dylv.liquidass
+Version: 5.1.testers
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
+Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm.deb
+Size: 168254
+SHA256: bb3317f576a63a7bcea35703e4246b6194e64d41f534b63445c992432399d5dc
+
+Package: dylv.liquidass
+Version: 7.alpha
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_7.alpha_iphoneos-arm64e.deb
+Size: 216206
+SHA256: f99c181d62827a4fcbbdd034e2b831b19c87ab6b6b4deadf04e6fff7105988c5
+
+Package: dylv.liquidass
+Version: 4.1.testers
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
+Filename: debs/dylv.liquidass_4.1.testers_iphoneos-arm.deb
+Size: 122444
+SHA256: 72e17f379c51c00b88e426a0a4b7c42a7e91b883b0188ea6210b761c3155a3ad
+
+Package: dylv.liquidass
+Version: 5.1.testers
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
+Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm64e.deb
+Size: 167778
+SHA256: a4e7911b2882f6cb244d453ffe8ff3129f256d2f7f85feac0a0901b3771242ec
+
+Package: dylv.liquidass
+Version: 5.testers
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
+Filename: debs/dylv.liquidass_5.testers_iphoneos-arm64.deb
+Size: 164872
+SHA256: 2b8e8b243f71f69d1cf0dd9cf4824869851cac50bb3edb5751036a476c2b2a4c
+
+Package: dylv.liquidass
 Version: 6.alpha
 Architecture: iphoneos-arm64
 Maintainer: dylv
@@ -10,6 +87,17 @@ Size: 186806
 SHA256: 0c47dfb19c99cc53c893c0e11159466f738ce1f32fcfb5bbb379e34b2da8b248
 
 Package: dylv.liquidass
+Version: 4.1.testers
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
+Filename: debs/dylv.liquidass_4.1.testers_iphoneos-arm64.deb
+Size: 123642
+SHA256: dd1843c201abaa5703278c66e027e8798f73aecbcc9b39b0a099556cc9531198
+
+Package: dylv.liquidass
 Version: 6.alpha
 Architecture: iphoneos-arm
 Maintainer: dylv
@@ -19,6 +107,17 @@ Description: ass
 Filename: debs/dylv.liquidass_6.alpha_iphoneos-arm.deb
 Size: 186702
 SHA256: 4c02065e347f51ad8d30bd835ce596896b8490807701ef3acc6d8da2d6ba9373
+
+Package: dylv.liquidass
+Version: 5.1.testers
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader, ldid
+Description: ass
+Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm64.deb
+Size: 168470
+SHA256: c00e88f3ac30133cb393be95c1c6e52cfa2e34291973439d0216a692784ef198
 
 Package: dylv.liquidass
 Version: 6.alpha
@@ -41,4 +140,26 @@ Description: Why are my screen corners rounded?
 Filename: debs/wings.rtc-1.0.0.deb
 Size: 6304
 SHA256: b5ddce52ca906674d8dac4d87ecb8dc4e30c5525570955027ccc55653ee68e3e
+
+Package: dylv.liquidass
+Version: 7.alpha
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_7.alpha_iphoneos-arm.deb
+Size: 215290
+SHA256: 4a127ed726f6f4efde77b508de7d1922585b3a7d0d5d0226f617b7d564f80564
+
+Package: dylv.liquidass
+Version: 3.1.testers
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Description: ass
+Filename: debs/dylv.liquidass_3.1.testers_iphoneos-arm64.deb
+Size: 58670
+SHA256: f89cb289bf4345df852f46a53c0bf6d03fcff8fcf03bbe0cd14bedb2b170806e
 
