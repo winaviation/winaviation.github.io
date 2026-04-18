@@ -74,8 +74,8 @@ Description: ass
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_7.2.alpha_iphoneos-arm64e.deb
-Size: 326768
-SHA256: a26f000b7110e2f412f8393cc81397164ccdd0ae71821deed194d5702ba2ad52
+Size: 349466
+SHA256: 8d8ca8955ff5ccb9f2258b17fb892ed2f069ca421f03cd7ca9f0bcc1aa3f0f84
 
 Package: dylv.liquidass
 Name: liquidass
@@ -114,8 +114,8 @@ Description: ass
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_7.2.alpha_iphoneos-arm.deb
-Size: 325946
-SHA256: 5d72ae89aab25ca022b8324534b2c3a5d0a4acebe8a9da368a31757c698e9e08
+Size: 350938
+SHA256: e3e56e236906268a3bab4bb5f5f900f65854e9c1913b8df0c62310b6595d23e0
 
 Package: dylv.liquidass
 Name: liquidass
@@ -193,8 +193,8 @@ Description: ass
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_7.2.alpha_iphoneos-arm64.deb
-Size: 322266
-SHA256: 830a79a6486e7fc7764ac7d1e31c8287e674aa8d5c5ed966a54eaabd638c9348
+Size: 346980
+SHA256: d1032e5976a28f3c6df7dfb35d9330744f9ee672ab2cd24927ccb0240c6194e7
 
 Package: dylv.liquidass
 Name: liquidass
