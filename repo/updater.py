@@ -1,149 +1,224 @@
-V = "SHA256"
-U = "Size"
-T = "Filename"
-S = "Packages"
-N = "rb"
-M = "Description"
-L = "Depends"
-K = "Author"
-J = "Maintainer"
-I = "Architecture"
-H = "Version"
-G = "Package"
-F = "\n"
-D = open
 import bz2
-import datetime as P
+import datetime
 import gzip
-import hashlib as B
-import os as A
-import shutil as O
-import subprocess as C
+import hashlib
+import json
+import os
+import shutil
+import subprocess
 
-E = "./debs"
-Q = S
-W = "Release"
-Z = [G, H, I, J, K, L, M, T, U, V]
+DEBS_DIR = "./debs"
+PACKAGES_FILE = "Packages"
+RELEASE_FILE = "Release"
+REPO_BASE_URL = "https://winaviation.github.io/repo"
+
+PACKAGE_FIELDS = [
+    "Package",
+    "Name",
+    "Version",
+    "Architecture",
+    "Maintainer",
+    "Author",
+    "Depends",
+    "Description",
+    "Section",
+    "SileoDepiction",
+    "Filename",
+    "Size",
+    "SHA256",
+]
 
 
-def a(deb_path):
+def read_deb_fields(deb_path):
     try:
-        H = C.run(
-            ["dpkg-deb", "-f", deb_path], stdout=C.PIPE, stderr=C.DEVNULL, text=True
+        result = subprocess.run(
+            ["dpkg-deb", "-f", deb_path],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            text=True,
+            check=False,
         )
-        I = H.stdout
-        D = {}
-        E = None
-        for A in I.splitlines():
-            if A.startswith(" "):
-                if E:
-                    D[E] += F + A.strip()
-                continue
-            if ": " in A:
-                B, G = A.split(": ", 1)
-                B = B.strip()
-                G = G.strip()
-                D[B] = G
-                E = B
-        return D
     except Exception:
         return {}
 
+    fields = {}
+    current_key = None
+    for line in result.stdout.splitlines():
+        if line.startswith(" "):
+            if current_key:
+                fields[current_key] += "\n" + line.strip()
+            continue
+        if ": " not in line:
+            continue
+        key, value = line.split(": ", 1)
+        current_key = key.strip()
+        fields[current_key] = value.strip()
+    return fields
 
-def R(path):
-    A = B.sha256()
-    with D(path, N) as C:
-        for E in iter(lambda: C.read(8192), b""):
-            A.update(E)
-    return A.hexdigest()
+
+def sha256(path):
+    digest = hashlib.sha256()
+    with open(path, "rb") as handle:
+        for chunk in iter(lambda: handle.read(8192), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
 
 
-def b(filename):
-    G = ".bz2"
-    F = ".gz"
-    B = filename
-    for H in [F, G]:
+def compress(path):
+    for suffix in (".gz", ".bz2"):
         try:
-            A.remove(B + H)
+            os.remove(path + suffix)
         except FileNotFoundError:
             pass
-    with D(B, N) as C:
-        with gzip.open(B + F, "wb") as E:
-            O.copyfileobj(C, E)
-    with D(B, N) as C:
-        with bz2.open(B + G, "wb") as E:
-            O.copyfileobj(C, E)
+
+    with open(path, "rb") as source:
+        with gzip.open(path + ".gz", "wb") as target:
+            shutil.copyfileobj(source, target)
+
+    with open(path, "rb") as source:
+        with bz2.open(path + ".bz2", "wb") as target:
+            shutil.copyfileobj(source, target)
 
 
-def c():
-    E = "dylv's repo"
-    G = E
-    H = E
-    I = "stable"
-    J = "1.0"
-    K = "ios"
-    L = "iphoneos-arm iphoneos-arm64 iphoneos-arm64e"
-    M = "main"
-    N = "my nice lil repo"
-    O = P.datetime.now(P.timezone.utc)
-    Q = O.strftime("%a, %d %b %Y %H:%M:%S UTC")
-    C = [
-        f"Origin: {G}",
-        f"Label: {H}",
-        f"Suite: {I}",
-        f"Version: {J}",
-        f"Codename: {K}",
-        f"Date: {Q}",
-        f"Architectures: {L}",
-        f"Components: {M}",
-        f"Description: {N}",
+def write_release():
+    now = datetime.datetime.now(datetime.timezone.utc)
+    date_str = now.strftime("%a, %d %b %Y %H:%M:%S UTC")
+    lines = [
+        "Origin: dylv's repo",
+        "Label: dylv's repo",
+        "Suite: stable",
+        "Version: 1.0",
+        "Codename: ios",
+        f"Date: {date_str}",
+        "Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e",
+        "Components: main",
+        "Description: my nice lil repo",
         "SHA256:",
     ]
-    for B in [S, "Packages.gz", "Packages.bz2"]:
-        if A.path.exists(B):
-            T = A.path.getsize(B)
-            U = R(B)
-            C.append(f" {U} {T} {B}")
-    with D(W, "w") as V:
-        V.write(F.join(C) + F)
 
-
-def X():
-    C = ""
-    S = []
-    if not A.path.exists(E):
-        print(f"error: {E} directory not found")
-        return
-    for N in A.listdir(E):
-        if not N.endswith(".deb"):
+    for filename in (PACKAGES_FILE, "Packages.gz", "Packages.bz2"):
+        if not os.path.exists(filename):
             continue
-        O = A.path.join(E, N)
-        B = a(O)
-        d = A.path.getsize(O)
-        e = R(O)
-        P = {
-            G: B.get(G, C),
-            H: B.get(H, C),
-            I: B.get(I, C),
-            J: B.get(J, C),
-            K: B.get(K, C),
-            L: B.get(L, C),
-            M: B.get(M, C),
-            T: f"debs/{N}",
-            U: str(d),
-            V: e,
+        lines.append(f" {sha256(filename)} {os.path.getsize(filename)} {filename}")
+
+    with open(RELEASE_FILE, "w", encoding="utf-8") as handle:
+        handle.write("\n".join(lines) + "\n")
+
+
+def safe_package_name(package_name):
+    return "".join(
+        char for char in package_name if char.isalnum() or char in ("-", "_", ".")
+    ).strip(".")
+
+
+def read_changelog(package_name, version):
+    safe_name = safe_package_name(package_name)
+    if not safe_name or not version:
+        return ""
+
+    candidates = [
+        os.path.join("changelogs", safe_name, f"{version}.md"),
+        os.path.join("changelogs", f"{version}.md"),
+    ]
+    for path in candidates:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as handle:
+                return handle.read().strip()
+    return ""
+
+
+def generate_depiction(fields):
+    package_name = fields.get("Package", "")
+    version = fields.get("Version", "")
+    changelog = read_changelog(package_name, version)
+    if not changelog:
+        return ""
+
+    safe_name = safe_package_name(package_name)
+    depiction_dir = os.path.join("depictions", safe_name)
+    os.makedirs(depiction_dir, exist_ok=True)
+
+    data = {
+        "class": "DepictionTabView",
+        "tabs": [
+            {
+                "tabname": "Overview",
+                "views": [
+                    {
+                        "class": "DepictionHeaderView",
+                        "title": fields.get("Name") or package_name,
+                        "subtitle": version,
+                    },
+                    {
+                        "class": "DepictionMarkdownView",
+                        "markdown": fields.get("Description") or f"Package: {package_name}",
+                    },
+                ],
+            },
+            {
+                "tabname": "Changelog",
+                "views": [
+                    {
+                        "class": "DepictionMarkdownView",
+                        "markdown": changelog,
+                    }
+                ],
+            },
+        ],
+    }
+
+    output_path = os.path.join(depiction_dir, "index.json")
+    with open(output_path, "w", encoding="utf-8") as handle:
+        json.dump(data, handle, ensure_ascii=False, indent=2)
+        handle.write("\n")
+
+    return f"{REPO_BASE_URL}/depictions/{safe_name}/index.json"
+
+
+def write_packages():
+    if not os.path.exists(DEBS_DIR):
+        print(f"error: {DEBS_DIR} directory not found")
+        return
+
+    packages = []
+    for filename in os.listdir(DEBS_DIR):
+        if not filename.endswith(".deb"):
+            continue
+
+        deb_path = os.path.join(DEBS_DIR, filename)
+        fields = read_deb_fields(deb_path)
+        package = {
+            "Package": fields.get("Package", ""),
+            "Name": fields.get("Name", ""),
+            "Version": fields.get("Version", ""),
+            "Architecture": fields.get("Architecture", ""),
+            "Maintainer": fields.get("Maintainer", ""),
+            "Author": fields.get("Author", ""),
+            "Depends": fields.get("Depends", ""),
+            "Description": fields.get("Description", ""),
+            "Section": fields.get("Section", ""),
+            "Filename": f"debs/{filename}",
+            "Size": str(os.path.getsize(deb_path)),
+            "SHA256": sha256(deb_path),
         }
-        S.append(P)
-    with D(Q, "w") as W:
-        for P in S:
-            for X in Z:
-                Y = P.get(X)
-                if Y:
-                    W.write(f"{X}: {Y}\n")
-            W.write(F)
-    b(Q)
-    c()
+
+        sileo_depiction = fields.get("SileoDepiction", "") or generate_depiction(fields)
+        if sileo_depiction:
+            package["SileoDepiction"] = sileo_depiction
+
+        packages.append(package)
+
+    with open(PACKAGES_FILE, "w", encoding="utf-8") as handle:
+        for package in packages:
+            for field in PACKAGE_FIELDS:
+                value = package.get(field)
+                if value:
+                    handle.write(f"{field}: {value}\n")
+            handle.write("\n")
+
+    compress(PACKAGES_FILE)
+    write_release()
 
 
 if __name__ == "__main__":
-    X()
+    write_packages()
