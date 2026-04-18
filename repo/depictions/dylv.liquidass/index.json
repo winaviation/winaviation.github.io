@@ -20,7 +20,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "# 7.2.alpha\n\n- reorganized More Options subpage\n- allows you to override dark/light tint regardless of system appearance\n- the glass clock is now living in the Lockscreen subpage\n- added custom glass clock for iOS 15\n- fix context menu cell corner radius hook being too broad\n- fix *.Enabled randomly dimming some menus for no reason\n- fix banners defaulting to snapshot capture\n- fix banners default params being too light\n- debug logging option\n- you can now build the twewak on linux\n- improved Vietnamese localization\n- improved Makefile (PR: ExoCore-Kernel)\n- basic traditional Chinese localization (PR: AD-iOS)\n- tweak icon (thanks imod_commission :D)"
+          "markdown": "# 7.2.alpha\n\n- reorganized More Options subpage\n- allows you to override dark/light tint regardless of system appearance\n- the glass clock is now living in the Lockscreen subpage\n- added custom glass clock for iOS 15\n- fix context menu cell corner radius hook being too broad\n- fix *.Enabled randomly dimming some menus for no reason\n- fix banners defaulting to snapshot capture\n- fix banners default params being too light\n- debug logging option\n- you can now build the tweak on linux\n- improved Vietnamese localization\n- improved Makefile (PR: ExoCore-Kernel)\n- basic traditional Chinese localization (PR: AD-iOS)\n- tweak icon (thanks imod_commission :D)"
         }
       ]
     }
