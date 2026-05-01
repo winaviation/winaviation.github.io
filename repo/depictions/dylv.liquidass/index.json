@@ -7,11 +7,11 @@
         {
           "class": "DepictionHeaderView",
           "title": "Liquid (Gl)ass",
-          "subtitle": "7.2.alpha"
+          "subtitle": "8.alpha"
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "ass"
+          "markdown": "next level diarrhea"
         }
       ]
     },
@@ -20,7 +20,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "# 7.2.alpha\n\n- reorganized More Options subpage\n- allows you to override dark/light tint regardless of system appearance\n- the glass clock is now living in the Lockscreen subpage\n- added custom glass clock for iOS 15\n- fix context menu cell corner radius hook being too broad\n- fix *.Enabled randomly dimming some menus for no reason\n- fix banners defaulting to snapshot capture\n- fix banners default params being too light\n- debug logging option\n- you can now build the tweak on linux\n- improved Vietnamese localization\n- improved Makefile (PR: ExoCore-Kernel)\n- basic traditional Chinese localization (PR: AD-iOS)\n- tweak icon (thanks imod_commission :D)"
+          "markdown": "# 8.alpha\n\n- iOS 26 tall clock\n- Remove Widget Background integration (cre OwnGoalStudio for the source code)\n- applied glass to the lockscreen passcode screen\n- you can now import and export preferences (bottom of the More Options subpage)\n- rebuilt the settings modernization pass with liquid sliders, liquid switches, liquid segmented controls, rounded rows, and the top gradient fade\n- added per-page reset in prefs\n- added dynamic stock corner radius default caching so reset now goes back to the fetched system radius instead of old hardcoded fallback values\n- hardened the widget hook so it no longer injects into some fullscreen blur source (idk why it even exists)\n- quick actions live capture now dont crash springboard\n- forced lockscreen quick actions into light appearance to avoid unreadable dark glyph rendering for some users\n- improved legacy wallpaper and snapshot handling across older iOS paths (simpler fixed cpbitmap sourcing and safer cache refresh)\n- improved app library source alignment on fullscreen phones and fixed several search field and glass radius funny cases\n- big internal cleanup pass across the runtime, prefs, and snapshot systems improved performance\n- several refresh paths were improved so wallpaper, blur, and snapshot work does less unnecessary repeat work\n- shared runtime plumbing was cleaned up so display links, caching, and log handling behave more predictably\n- many smaller polish, localization, and bug fixes applied across springboard, prefs, widgets, app library, lockscreen, and rwb"
         }
       ]
     }

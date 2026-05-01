@@ -170,6 +170,21 @@ Size: 123642
 SHA256: dd1843c201abaa5703278c66e027e8798f73aecbcc9b39b0a099556cc9531198
 
 Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 8.alpha
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_8.alpha_iphoneos-arm64e.deb
+Size: 512996
+SHA256: f02c46227d5f7983094f84c09bb1fef4df24523bb57db0fc5b0126570bcb030d
+
+Package: dylv.liquidass
 Name: liquidass
 Version: 6.alpha
 Architecture: iphoneos-arm
@@ -208,6 +223,36 @@ Section: Tweaks
 Filename: debs/dylv.liquidass_5.1.testers_iphoneos-arm64.deb
 Size: 168470
 SHA256: c00e88f3ac30133cb393be95c1c6e52cfa2e34291973439d0216a692784ef198
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 8.alpha
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_8.alpha_iphoneos-arm.deb
+Size: 513464
+SHA256: fd1c81921fcedfb3b336f393dc4f81563c62a47cd15ee27aa0049cfa4187a211
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 8.alpha
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_8.alpha_iphoneos-arm64.deb
+Size: 514276
+SHA256: c5acef0c92230b9e8206accc4de8694ecc79b0d804d84864eebbdfb270973b3e
 
 Package: dylv.liquidass
 Name: liquidass
