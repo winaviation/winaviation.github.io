@@ -181,8 +181,8 @@ Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_8.alpha_iphoneos-arm64e.deb
-Size: 512996
-SHA256: f02c46227d5f7983094f84c09bb1fef4df24523bb57db0fc5b0126570bcb030d
+Size: 514106
+SHA256: 4a80d7fc6fb36fa15d15bffa5c415a53a3f12727db88dcdf771beb1b8327e7af
 
 Package: dylv.liquidass
 Name: liquidass
@@ -236,8 +236,8 @@ Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_8.alpha_iphoneos-arm.deb
-Size: 513464
-SHA256: fd1c81921fcedfb3b336f393dc4f81563c62a47cd15ee27aa0049cfa4187a211
+Size: 513530
+SHA256: 706541fd54aa7c72f98b1cb845a1ad98e30cbe9354e9d7aa5080ee404d2676ba
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
@@ -251,8 +251,8 @@ Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_8.alpha_iphoneos-arm64.deb
-Size: 514276
-SHA256: c5acef0c92230b9e8206accc4de8694ecc79b0d804d84864eebbdfb270973b3e
+Size: 513842
+SHA256: c2522d9651d31a7c197bba7440ce842a6981a84efc981d29f7164b0417a6d6f4
 
 Package: dylv.liquidass
 Name: liquidass
