@@ -7,7 +7,7 @@
         {
           "class": "DepictionHeaderView",
           "title": "Liquid (Gl)ass",
-          "subtitle": "8.alpha"
+          "subtitle": "8.1.alpha"
         },
         {
           "class": "DepictionMarkdownView",
@@ -20,7 +20,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "# 8.alpha\n\n- iOS 26 tall clock\n- Remove Widget Background integration (cre OwnGoalStudio for the source code)\n- applied glass to the lockscreen passcode screen\n- you can now import and export preferences (bottom of the More Options subpage)\n- rebuilt the settings modernization pass with liquid sliders, liquid switches, liquid segmented controls, rounded rows, and the top gradient fade\n- added per-page reset in prefs\n- added dynamic stock corner radius default caching so reset now goes back to the fetched system radius instead of old hardcoded fallback values\n- hardened the widget hook so it no longer injects into some fullscreen blur source (idk why it even exists)\n- quick actions live capture now dont crash springboard\n- forced lockscreen quick actions into light appearance to avoid unreadable dark glyph rendering for some users\n- improved legacy wallpaper and snapshot handling across older iOS paths (simpler fixed cpbitmap sourcing and safer cache refresh)\n- improved app library source alignment on fullscreen phones and fixed several search field and glass radius funny cases\n- big internal cleanup pass across the runtime, prefs, and snapshot systems improved performance\n- several refresh paths were improved so wallpaper, blur, and snapshot work does less unnecessary repeat work\n- shared runtime plumbing was cleaned up so display links, caching, and log handling behave more predictably\n- many smaller polish, localization, and bug fixes applied across springboard, prefs, widgets, app library, lockscreen, and rwb"
+          "markdown": "# 8.1.alpha\n\n- new perf profiler\n- perf optimizations (probably working???)\n- no more hardcoded strings for RWB (they in the editable RWB list now)\n- fix a few conflicts with lockscreen items\n- RWB widgets now got proper glass\n- fixup a few passcode issues\n- rewrite app icons and widgets hooks so they no longer conflict\n- lockscreen date now in abbreviated form (e.g Tue 1 Apr)\n- fixed glass view backgrounds alignment issues with lockscreen items\n- new estimation of the tweak's RAM usage at the bottom of prefs"
         }
       ]
     }

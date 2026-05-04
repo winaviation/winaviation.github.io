@@ -185,6 +185,21 @@ Size: 514106
 SHA256: 4a80d7fc6fb36fa15d15bffa5c415a53a3f12727db88dcdf771beb1b8327e7af
 
 Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 8.1.alpha
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_8.1.alpha_iphoneos-arm64.deb
+Size: 533352
+SHA256: 59798fd45ea6e43d583f372bf2d66e08b206eee58873ee599546e171de685773
+
+Package: dylv.liquidass
 Name: liquidass
 Version: 6.alpha
 Architecture: iphoneos-arm
@@ -267,6 +282,21 @@ Filename: debs/dylv.liquidass_6.alpha_iphoneos-arm64e.deb
 Size: 186944
 SHA256: 68a771e93b41ee3f8dc639230d58fbf18d3b560417c52f14cab0746e0bfe2f25
 
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 8.1.alpha
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_8.1.alpha_iphoneos-arm64e.deb
+Size: 533610
+SHA256: fb3f374d8d23f9e312bb50ddedf143366c911940e87bad40356b942bbcf6c25f
+
 Package: com.wings.rtc
 Name: RoundTheCorners
 Version: 1.0.0
@@ -305,6 +335,21 @@ Section: Tweaks
 Filename: debs/dylv.liquidass_3.1.testers_iphoneos-arm64.deb
 Size: 58670
 SHA256: f89cb289bf4345df852f46a53c0bf6d03fcff8fcf03bbe0cd14bedb2b170806e
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 8.1.alpha
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_8.1.alpha_iphoneos-arm.deb
+Size: 532448
+SHA256: f98103aecc6dcff90fdb067acab2d3f16940ee062311413655a86d0337450e32
 
 Package: dylv.liquidass
 Name: liquidass
