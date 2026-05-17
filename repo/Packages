@@ -10,8 +10,8 @@ Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm.deb
-Size: 1367524
-SHA256: 8b31049a1990f86af67f18e8994b6603204658e7c1c985b8b743d3be31b450b2
+Size: 1367534
+SHA256: efd435009ad330b190400f909ab73a07d9007b10ef66a90c49b034f5f00d0081
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
@@ -25,8 +25,8 @@ Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm64e.deb
-Size: 1366772
-SHA256: 468be628bc7e3058d4c3ddabda9855be3f6d8599102c3a3795eae1155cb2dcd4
+Size: 1367910
+SHA256: cf7a1dfe1d34075fccc7278716e94ceeb18ea781b8088ada50edb70f3cdfa91d
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
@@ -40,8 +40,8 @@ Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm64.deb
-Size: 1367570
-SHA256: dbdfc11aaa18472c36d3b1644d5642442b8b329a0ad84ace529aea22ba943f52
+Size: 1368404
+SHA256: 76debe662ea9309d82dfb1171e138586ace8de9ef18b6e9a9e091dc041ecb657
 
 Package: com.wings.rtc
 Name: RoundTheCorners
