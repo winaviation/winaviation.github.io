@@ -3,11 +3,11 @@ Label: dylv's repo
 Suite: stable
 Version: 1.0
 Codename: ios
-Date: Mon, 04 May 2026 14:14:18 UTC
+Date: Sun, 17 May 2026 06:27:33 UTC
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: my nice lil repo
 SHA256:
- 4883278ee1bcf19441a501e3c5bfd40d30aa0e7b6f131b6add6768a3d233b9a4 11486 Packages
- e9d400c5dd3f3d8b260a7398fea7839093b6e7e55adb19e57c6ce550b8416838 1918 Packages.gz
- 547d2b67862287d478d00c062cac03e89f1d555ba2fbfc66a0e1038b0e60b9b2 2060 Packages.bz2
+ c97c47795447cf4172f0d2ef50494ed59e67f9abb09e509e283c8fa4539fbe8b 1764 Packages
+ 0009281448c90445fa9110287beaa446dc8227b7fde22226ba07b7d85c325b31 600 Packages.gz
+ 96db09e3eae396c8bc2a694b2aac812aa20c5120d7eb1061832d85fe6f8579f3 777 Packages.bz2
