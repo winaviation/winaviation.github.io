@@ -8,6 +8,7 @@ Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
 Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
 Description: next level diarrhea
 Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm.deb
 Size: 1368614
 SHA256: d4cba5fc56cae2b9edce1f1a6864dd05bd32e1c8b57c52ffd0ee483eff4d6871
@@ -22,6 +23,7 @@ Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
 Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
 Description: next level diarrhea
 Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm64e.deb
 Size: 1367258
 SHA256: daad28f7a9c284871a7916d16b4d26f891ee77bcf3aaa0fd345b76cbd5d27f2f
@@ -36,6 +38,7 @@ Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
 Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
 Description: next level diarrhea
 Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm64.deb
 Size: 1367302
 SHA256: 6fd4c5ea3e61af1adcdfec69f44463f0555538d72ef8ba3858d2dc270649947a

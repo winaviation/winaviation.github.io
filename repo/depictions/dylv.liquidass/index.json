@@ -7,7 +7,7 @@
         {
           "class": "DepictionHeaderView",
           "title": "Liquid (Gl)ass",
-          "subtitle": "8.1.alpha"
+          "subtitle": "0.0.9a"
         },
         {
           "class": "DepictionMarkdownView",
@@ -20,7 +20,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "# 8.1.alpha\n\n- new perf profiler\n- perf optimizations (probably working???)\n- no more hardcoded strings for RWB (they in the editable RWB list now)\n- fix a few conflicts with lockscreen items\n- RWB widgets now got proper glass\n- fixup a few passcode issues\n- rewrite app icons and widgets hooks so they no longer conflict\n- lockscreen date now in abbreviated form (e.g Tue 1 Apr)\n- fixed glass view backgrounds alignment issues with lockscreen items\n- new estimation of the tweak's RAM usage at the bottom of prefs"
+          "markdown": "# 0.0.9a\n\n## tweak\n\n- fixed app icons and widgets (hopefully)\n- new manual per-surface display-link (thing that makes things beautiful and more real to iOS 26 at cost of shitty lag) toggle\n- actually fix passcode buttons\n- performance improvements (aiding battery drain and overheating)\n- optimized live capture + fix live capture blur (for #18)\n- experimental control center\n- fix app library triggering an always on display link just cuz its enabled\n- new live capture configuration subpage\n- new custom views feature (advanced, allows you to inject a glass view into any springboard view)\n\n## prefs\n\n- fixed issues with preferences not loading (PR: OaksTheAwesome)\n- update Traditional Chinese (PR: andyajhs)\n- date label format is now configurable (#17)\n- new About page\n- newly applied and added toggles for preferences back/reset buttons, go to top button, and respring bar\n- settings top fade and global settings back button changes\n- donate via crpyto (the only option for now)\n\n## internal code\n\n- respring now kills processes that needs to be killed for RWB\n- fix control center and clock display link running even when not showing up\n- hopefully fix and improved clock retraction problems on iOS 15 and lower\n- lower minimum FPS (range 1-60/1-120)\n- remove 30 fps cap for clock, follows Lockscreen.FPS instead\n- code quality improvements\n\n## misc\n- normalized ver scheme"
         }
       ]
     }
