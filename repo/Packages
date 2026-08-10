@@ -15,6 +15,51 @@ SHA256: efd435009ad330b190400f909ab73a07d9007b10ef66a90c49b034f5f00d0081
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
+Version: 0.1.0b
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_0.1.0b_iphoneos-arm64e.deb
+Size: 1297246
+SHA256: caf947160a08c91a0651e28bd7c1acf1f91e39097670fd9d82a22f76103c6cf8
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 0.1.0b
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_0.1.0b_iphoneos-arm.deb
+Size: 1301200
+SHA256: d6415cdb70af468c30682e44e0767a8825a916e7ea2468908dbf17be085771e4
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 0.1.0b
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
+Filename: debs/dylv.liquidass_0.1.0b_iphoneos-arm64.deb
+Size: 1301194
+SHA256: 389a78b8d60b7635a4172b881e552cb080b897341593bced9c6fe24546ee4710
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
 Version: 0.0.9a
 Architecture: iphoneos-arm64e
 Maintainer: dylv
