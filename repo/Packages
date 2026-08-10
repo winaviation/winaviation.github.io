@@ -19,14 +19,14 @@ Version: 0.1.0b
 Architecture: iphoneos-arm64e
 Maintainer: dylv
 Author: dylv
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader
 Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
 Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.1.0b_iphoneos-arm64e.deb
-Size: 1297246
-SHA256: caf947160a08c91a0651e28bd7c1acf1f91e39097670fd9d82a22f76103c6cf8
+Size: 1299370
+SHA256: ed6b914816ccc5419d33466c8351bb42e6f36a9372a54bb0b93d38dc35faf5fc
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
@@ -34,14 +34,14 @@ Version: 0.1.0b
 Architecture: iphoneos-arm
 Maintainer: dylv
 Author: dylv
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader
 Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
 Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.1.0b_iphoneos-arm.deb
-Size: 1301200
-SHA256: d6415cdb70af468c30682e44e0767a8825a916e7ea2468908dbf17be085771e4
+Size: 1303246
+SHA256: 1cbe43902c21474c7bce87c548f107d314e01460b0d504d64a3c6e8d50ab4d10
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
@@ -49,14 +49,14 @@ Version: 0.1.0b
 Architecture: iphoneos-arm64
 Maintainer: dylv
 Author: dylv
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader
 Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
 Description: next level diarrhea
 Section: Tweaks
 SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/index.json
 Filename: debs/dylv.liquidass_0.1.0b_iphoneos-arm64.deb
-Size: 1301194
-SHA256: 389a78b8d60b7635a4172b881e552cb080b897341593bced9c6fe24546ee4710
+Size: 1304024
+SHA256: e1945e07441cc249add8f8e22cbde53ba71b7f0314ca40aa2571265746fb7a32
 
 Package: com.ngkhoi.26cam-legacy
 Name: 26Cam (Legacy)
