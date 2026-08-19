@@ -84,6 +84,19 @@ Filename: debs/com.ngkhoi.26cam-legacy_0.0.3-beta_iphoneos-arm.deb
 Size: 81466
 SHA256: f3729e5d8d085b9e731f426cfb4495ed37a1ffb0bef41ccef6bbd4ac24e2a203
 
+Package: com.ngkhoi.26anim
+Name: 26Anim
+Version: 1.0.0
+Architecture: iphoneos-arm
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: my attempt to replicate iOS 26 app opening/closing animation.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26anim_1.0.0_iphoneos-arm.deb
+Size: 28748
+SHA256: 810d4a29b09b0ad886080a4d5a58c9c62e91a259bd3e5750741012a2a003cad5
+
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
 Version: 0.0.9a
@@ -98,6 +111,19 @@ SileoDepiction: https://winaviation.github.io/repo/depictions/dylv.liquidass/ind
 Filename: debs/dylv.liquidass_0.0.9a_iphoneos-arm64e.deb
 Size: 1367910
 SHA256: cf7a1dfe1d34075fccc7278716e94ceeb18ea781b8088ada50edb70f3cdfa91d
+
+Package: com.ngkhoi.26anim
+Name: 26Anim
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: my attempt to replicate iOS 26 app opening/closing animation.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26anim_1.0.0_iphoneos-arm64e.deb
+Size: 28776
+SHA256: a7fc36cd7238c0bdf2725f41d9c8a4d66c801399dd628f2b03d63e5b881774f7
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
@@ -126,6 +152,19 @@ Section: Tweaks
 Filename: debs/wings.rtc-1.0.0.deb
 Size: 6304
 SHA256: b5ddce52ca906674d8dac4d87ecb8dc4e30c5525570955027ccc55653ee68e3e
+
+Package: com.ngkhoi.26anim
+Name: 26Anim
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: my attempt to replicate iOS 26 app opening/closing animation.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26anim_1.0.0_iphoneos-arm64.deb
+Size: 28814
+SHA256: 84283a541383ae4e8d5d3ea3838eef0763879a35bf0e29ff958058b39fee0fa2
 
 Package: com.ngkhoi.26cam-legacy
 Name: 26Cam (Legacy)
