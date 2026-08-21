@@ -71,6 +71,19 @@ Filename: debs/com.ngkhoi.26cam-legacy_0.0.2-beta_iphoneos-arm64.deb
 Size: 122312
 SHA256: d2b02762491e06c97bd5eb873ed17198f7dfc9ad7896a81db96a11ad8df19959
 
+Package: com.ngkhoi.26anim
+Name: 26Anim
+Version: 1.0.3
+Architecture: iphoneos-arm
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: my attempt to replicate iOS 26 app opening/closing animation.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26anim_1.0.3_iphoneos-arm.deb
+Size: 57454
+SHA256: a1f1a0d3dad053f963faa44cf4594c7ec978575044d3d7e8732197f1027e9851
+
 Package: com.ngkhoi.26cam-legacy
 Name: 26Cam (Legacy)
 Version: 0.0.3-beta
@@ -114,6 +127,19 @@ SHA256: cf7a1dfe1d34075fccc7278716e94ceeb18ea781b8088ada50edb70f3cdfa91d
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
+Version: 1.0.3
+Architecture: iphoneos-arm64e
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: my attempt to replicate iOS 26 app opening/closing animation.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26anim_1.0.3_iphoneos-arm64e.deb
+Size: 58096
+SHA256: 145ac2b01608970b998c5c293bb3313a2f61b7ae9224f67b8aa94990e9eb4d5b
+
+Package: com.ngkhoi.26anim
+Name: 26Anim
 Version: 1.0.0
 Architecture: iphoneos-arm64e
 Maintainer: ngkhoi
@@ -152,6 +178,19 @@ Section: Tweaks
 Filename: debs/wings.rtc-1.0.0.deb
 Size: 6304
 SHA256: b5ddce52ca906674d8dac4d87ecb8dc4e30c5525570955027ccc55653ee68e3e
+
+Package: com.ngkhoi.26anim
+Name: 26Anim
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: my attempt to replicate iOS 26 app opening/closing animation.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26anim_1.0.3_iphoneos-arm64.deb
+Size: 54694
+SHA256: 06547fc3ca2659e4ebbd014e0c0320552131cc831017a49ee75905cc9a933926
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
