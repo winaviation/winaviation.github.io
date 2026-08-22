@@ -71,6 +71,19 @@ Filename: debs/com.ngkhoi.26cam-legacy_0.0.2-beta_iphoneos-arm64.deb
 Size: 122312
 SHA256: d2b02762491e06c97bd5eb873ed17198f7dfc9ad7896a81db96a11ad8df19959
 
+Package: dylv.blurless
+Name: Blurless
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Description: An awesome MobileSubstrate tweak!
+Section: Tweaks
+Filename: debs/dylv.blurless_0.0.1_iphoneos-arm64.deb
+Size: 4378
+SHA256: 7cb8f032998ffff8c1e7d1a54f883da8cf719f9d68add1d01b14248fc2293586
+
 Package: com.ngkhoi.26anim
 Name: 26Anim
 Version: 1.0.3
@@ -96,6 +109,19 @@ Section: Tweaks
 Filename: debs/com.ngkhoi.26cam-legacy_0.0.3-beta_iphoneos-arm.deb
 Size: 81466
 SHA256: f3729e5d8d085b9e731f426cfb4495ed37a1ffb0bef41ccef6bbd4ac24e2a203
+
+Package: dylv.blurless
+Name: Blurless
+Version: 0.0.1
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Description: An awesome MobileSubstrate tweak!
+Section: Tweaks
+Filename: debs/dylv.blurless_0.0.1_iphoneos-arm64e.deb
+Size: 4318
+SHA256: 8fefb6c3de569f0febf2a5c8e5f844d2efb69f86e12febd96460089143996bfd
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
@@ -178,6 +204,19 @@ Section: Tweaks
 Filename: debs/wings.rtc-1.0.0.deb
 Size: 6304
 SHA256: b5ddce52ca906674d8dac4d87ecb8dc4e30c5525570955027ccc55653ee68e3e
+
+Package: dylv.blurless
+Name: Blurless
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Description: An awesome MobileSubstrate tweak!
+Section: Tweaks
+Filename: debs/dylv.blurless_0.0.1_iphoneos-arm.deb
+Size: 4300
+SHA256: 9ac5c8b0d71663f351ad77ad4ad0bd5b479af747b1e9fa5cede69a8555ab9898
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
