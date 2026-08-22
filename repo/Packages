@@ -78,11 +78,11 @@ Architecture: iphoneos-arm64
 Maintainer: dylv
 Author: dylv
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
-Description: An awesome MobileSubstrate tweak!
+Description: Disables the blur filter systemwide. This was achieved by utilizing a bug I accidentally ran into while making the 0.1.0b update for Liquid (Gl)ass.
 Section: Tweaks
 Filename: debs/dylv.blurless_0.0.1_iphoneos-arm64.deb
-Size: 4378
-SHA256: 7cb8f032998ffff8c1e7d1a54f883da8cf719f9d68add1d01b14248fc2293586
+Size: 4460
+SHA256: 8bf669a15109b7e4f4e2633acb08005a3512d9703867774b0e26d6e5da285696
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
@@ -117,11 +117,11 @@ Architecture: iphoneos-arm64e
 Maintainer: dylv
 Author: dylv
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
-Description: An awesome MobileSubstrate tweak!
+Description: Disables the blur filter systemwide. This was achieved by utilizing a bug I accidentally ran into while making the 0.1.0b update for Liquid (Gl)ass.
 Section: Tweaks
 Filename: debs/dylv.blurless_0.0.1_iphoneos-arm64e.deb
-Size: 4318
-SHA256: 8fefb6c3de569f0febf2a5c8e5f844d2efb69f86e12febd96460089143996bfd
+Size: 4396
+SHA256: 4ee527cdf91e2bb9cf81ed1e3530c85bc55ec4ecce55866791b85e435510402d
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
@@ -212,11 +212,11 @@ Architecture: iphoneos-arm
 Maintainer: dylv
 Author: dylv
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
-Description: An awesome MobileSubstrate tweak!
+Description: Disables the blur filter systemwide. This was achieved by utilizing a bug I accidentally ran into while making the 0.1.0b update for Liquid (Gl)ass.
 Section: Tweaks
 Filename: debs/dylv.blurless_0.0.1_iphoneos-arm.deb
-Size: 4300
-SHA256: 9ac5c8b0d71663f351ad77ad4ad0bd5b479af747b1e9fa5cede69a8555ab9898
+Size: 4374
+SHA256: 4710c77f0299a5262fd402f063e25399960930bd815158704ee54b3b824111a2
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
