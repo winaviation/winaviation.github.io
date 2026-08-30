@@ -1,3 +1,16 @@
+Package: com.ngkhoi.26home
+Name: 26Home
+Version: 1.1.7
+Architecture: iphoneos-arm64
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: iOS 26 Homescreen customization.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26home_1.1.7_iphoneos-arm64.deb
+Size: 19919896
+SHA256: 53f8d3465f95107ccd48d6f46d59c7f8698ac5e591592020b9a024516a601294
+
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
 Version: 0.0.9a
@@ -84,6 +97,19 @@ Filename: debs/dylv.blurless_0.0.1_iphoneos-arm64.deb
 Size: 4460
 SHA256: 8bf669a15109b7e4f4e2633acb08005a3512d9703867774b0e26d6e5da285696
 
+Package: com.ngkhoi.26home
+Name: 26Home
+Version: 1.1.7
+Architecture: iphoneos-arm64e
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: iOS 26 Homescreen customization.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26home_1.1.7_iphoneos-arm64e.deb
+Size: 19917680
+SHA256: e2e6add4f90d7592cf4202a76a16aeb367ea499cda0f275649542ff18be70c6e
+
 Package: com.ngkhoi.26anim
 Name: 26Anim
 Version: 1.0.3
@@ -96,6 +122,19 @@ Section: Tweaks
 Filename: debs/com.ngkhoi.26anim_1.0.3_iphoneos-arm.deb
 Size: 57454
 SHA256: a1f1a0d3dad053f963faa44cf4594c7ec978575044d3d7e8732197f1027e9851
+
+Package: com.ngkhoi.26home
+Name: 26Home
+Version: 1.1.7
+Architecture: iphoneos-arm
+Maintainer: ngkhoi
+Author: ngkhoi
+Depends: mobilesubstrate
+Description: iOS 26 Homescreen customization.
+Section: Tweaks
+Filename: debs/com.ngkhoi.26home_1.1.7_iphoneos-arm.deb
+Size: 19920366
+SHA256: b9c5c257e6f87ce261ce7316a5426ca31bdcac7c056fa56b1506f9a8f540ad2f
 
 Package: com.ngkhoi.26cam-legacy
 Name: 26Cam (Legacy)
