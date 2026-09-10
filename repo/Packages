@@ -154,17 +154,17 @@ SHA256: e2e6add4f90d7592cf4202a76a16aeb367ea499cda0f275649542ff18be70c6e
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass
-Version: 0.1.1b-1+debug
-Architecture: iphoneos-arm64
+Version: 0.1.1-2b
+Architecture: iphoneos-arm
 Maintainer: dylv
 Author: dylv
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
 Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
 Description: next level diarrhea
 Section: Tweaks
-Filename: debs/dylv.liquidass_0.1.1b-1+debug_iphoneos-arm64.deb
-Size: 4614574
-SHA256: ce6515763d9f45b7ca78d5bec712e43fb88fe4fbfe7df939f5a795af6a99bea5
+Filename: debs/dylv.liquidass_0.1.1-2b_iphoneos-arm.deb
+Size: 3712402
+SHA256: f6c0833bca4c88a606ac5f0d517d969fa789ba954b3da02f49d1a43966635d99
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
@@ -191,6 +191,20 @@ Section: Tweaks
 Filename: debs/com.ngkhoi.26home_1.1.7_iphoneos-arm.deb
 Size: 19920366
 SHA256: b9c5c257e6f87ce261ce7316a5426ca31bdcac7c056fa56b1506f9a8f540ad2f
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 0.1.1-2b
+Architecture: iphoneos-arm64
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+Filename: debs/dylv.liquidass_0.1.1-2b_iphoneos-arm64.deb
+Size: 3713260
+SHA256: 1f8f78b287616fc7548431f46768516aba638ab5304523d4ad9ff9f8fbdb85c5
 
 Package: com.ngkhoi.26cam-legacy
 Name: 26Cam (Legacy)
@@ -258,6 +272,20 @@ Section: Tweaks
 Filename: debs/com.ngkhoi.26anim_1.0.3_iphoneos-arm64e.deb
 Size: 58096
 SHA256: 145ac2b01608970b998c5c293bb3313a2f61b7ae9224f67b8aa94990e9eb4d5b
+
+Package: dylv.liquidass
+Name: Liquid (Gl)ass
+Version: 0.1.1-2b
+Architecture: iphoneos-arm64e
+Maintainer: dylv
+Author: dylv
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
+Icon: https://winaviation.github.io/repo/depictions/dylv.liquidass/icon.png
+Description: next level diarrhea
+Section: Tweaks
+Filename: debs/dylv.liquidass_0.1.1-2b_iphoneos-arm64e.deb
+Size: 3707400
+SHA256: a6bff3b1019cdab6f253b8f76dd3f09e31f45941b29040a691d5a331b9919fed
 
 Package: com.ngkhoi.26anim
 Name: 26Anim
